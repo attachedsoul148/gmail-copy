@@ -1,0 +1,245 @@
+.emailList {
+    flex: 0.838;
+    background: white;
+    height: 97%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.top {
+    padding: 10px;
+    color: #444746;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top svg {
+    color: #444746;
+}
+
+.top__right,
+.top__left {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.inboxSection,
+.inboxSection__selected {
+    position: sticky;
+    top: 62;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    min-width: 200px;
+    gap: 20px;
+    padding: 0px 10px;
+}
+
+.inboxSection:hover,
+.inboxSection__selected:hover {
+    background: #f4f4f4;
+}
+
+.inboxSection__innerBox,
+.inboxSection__innerBox__selected {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.inboxSection__innerBox__selected {
+    border-bottom: 3px solid rgba(11, 87, 208, 255);
+}
+
+.emailRow__hoverMenu {
+    display: none;
+}
+
+.emailRow {
+    cursor: pointer;
+    transition: box-shadow .08s linear, min-width .15s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    height: 50px;
+    padding: 0px 15px 0px 3px;
+    border-top: 1px solid whitesmoke;
+}
+
+.emailRow__left {
+    display: flex;
+    align-items: center;
+    flex: 0.2;
+}
+
+.emailRow__right {
+    display: flex;
+    flex: 0.76;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.emailRow__right__text {
+    display: flex;
+}
+
+.emailRow__right__text h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    white-space: nowrap;
+}
+
+.emailRow__right__text p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 800px;
+    white-space: nowrap;
+    color: gray;
+    font-size: 14px;
+
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    flex: 0.04;
+}
+
+.date p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 160px;
+    white-space: nowrap;
+    color: gray;
+    font-size: 14px;
+}
+
+.emailRow:hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.emailRow:hover .emailRow__hoverMenu {
+    display: flex;
+    align-items: center;
+    flex: 0.04;
+}
+
+.emailRow:hover .date {
+    display: none;
+}
+
+.emailRow:hover svg {
+    color: #444746;
+}
+
+.emailList__footer {
+    border-top: 1px solid whitesmoke;
+    padding: 10px;
+    height: 28px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: gray;
+}
+
+.email {
+    flex: 0.838;
+    background: white;
+    height: 97%;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.email__header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email__header svg,
+.email__data__header svg {
+    color: #444746;
+}
+
+.email__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.email__data h4 {
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.email__data__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.email__data__header__left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.email__data__header__left p,
+.email__data__header__left span {
+    color: gray;
+    font-size: 12px;
+}
+
+.email__message {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.email__message p {
+    font-size: 14px;
+    color: #444746;
+    padding: 0px 70px;
+}
+
+.email__buttons {
+    display: flex;
+    gap: 20px;
+    padding: 30px 70px;
+}
+
+.email__button {
+    border: none !important;
+    text-transform: capitalize !important;
+    outline: none !important;
+    background: none !important;
+    padding: 10px 25px !important;
+    border: 1px solid gray !important;
+    color: #444746 !important;
+    border-radius: 25px !important;
+}
+
+.email__button:hover {
+    background: whitesmoke !important;
+}
+
+.email__header__left {
+    display: flex;
+    gap: 10px;
+}
